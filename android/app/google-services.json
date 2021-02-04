@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "717033983833",
+    "project_id": "firestoreproj-163",
+    "storage_bucket": "firestoreproj-163.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717033983833:android:c7331cd91eb3c7f9e4c648",
+        "android_client_info": {
+          "package_name": "com.dholasain.firestore_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717033983833-tvittjl0h6fuqeec6finnic0rouqr8a1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdR0_apIBcertUhwEi9u3ROo2d6OX_0uc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717033983833-tvittjl0h6fuqeec6finnic0rouqr8a1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
