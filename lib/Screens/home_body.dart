@@ -1,12 +1,23 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_auth/Screens/Home.dart';
 import 'package:flutter_auth/Screens/Login/login_screen.dart';
 import 'package:flutter_auth/Screens/Signup/signup_screen.dart';
 import 'package:flutter_auth/Screens/Welcome/components/background.dart';
 import 'package:flutter_auth/components/rounded_button.dart';
 import 'package:flutter_auth/constants.dart';
+import 'package:flutter_auth/data_firestore.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-class Home_Body extends StatelessWidget {
+class Home_Body extends StatefulWidget {
+  @override
+  _Home_BodyState createState() => _Home_BodyState();
+}
+
+class _Home_BodyState extends State<Home_Body> {
+  final db = FirebaseFirestore.instance;
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -31,10 +42,15 @@ class Home_Body extends StatelessWidget {
               press: () {},
             ),
             RoundedButton(
-              text: "Policy",
+              text: "Data",
               color: kPrimaryLightColor,
               textColor: Colors.black,
-              press: () {},
+              press: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => Data_Firestore(),
+                ),
+              ),
             ),
           ],
         ),
